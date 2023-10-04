@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "myfirstapp": {
+    "hspa": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/myfirstapp",
+            "outputPath": "dist/hspa",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -22,9 +22,12 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/data"
             ],
             "styles": [
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
@@ -61,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "myfirstapp:build:production"
+              "browserTarget": "hspa:build:production"
             },
             "development": {
-              "browserTarget": "myfirstapp:build:development"
+              "browserTarget": "hspa:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "myfirstapp:build"
+            "browserTarget": "hspa:build"
           }
         },
         "test": {

@@ -1,5 +1,5 @@
 {
-  "name": "myfirstapp",
+  "name": "hspa",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -18,7 +18,12 @@
     "@angular/platform-browser": "^16.1.0",
     "@angular/platform-browser-dynamic": "^16.1.0",
     "@angular/router": "^16.1.0",
+    "@kolkov/ngx-gallery": "^2.0.1",
+    "alertify": "^0.3.0",
+    "alertifyjs": "^1.13.1",
     "bootstrap": "^5.3.2",
+    "ngx-bootstrap": "^11.0.2",
+    "ngx-gallery": "^5.10.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
